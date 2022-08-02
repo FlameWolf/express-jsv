@@ -27,7 +27,7 @@ const postCreateSchema = {
 };
 const createRouter = () => {
 	const router = express.Router();
-	router.post("/", validateSchema(postCreateSchema), async (req, res, next) => {
+	router.post("/body", validateSchema(postCreateSchema), async (req, res, next) => {
 		res.status(200).send();
 	});
 	return router;
