@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "blank"
+		"url": "https://github.com/FlameWolf/express-jsv"
 	},
 	"author": "FlameWolf",
 	"license": "ISC",
