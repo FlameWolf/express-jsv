@@ -60,7 +60,7 @@ tap.test("fail schema validation", async t => {
 				protocol: "http:",
 				hostname: "localhost",
 				port: address.port,
-				path: "/",
+				path: "/body",
 				headers: {
 					"Content-Type": "application/json",
 					"Content-Length": content.length
