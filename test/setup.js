@@ -3,7 +3,7 @@
 const express = require("express");
 const validateSchema = require("../index");
 
-const postCreateSchema = {
+const bodySchema = {
 	body: {
 		type: "object",
 		properties: {
@@ -27,7 +27,7 @@ const postCreateSchema = {
 };
 const createRouter = () => {
 	const router = express.Router();
-	router.post("/body", validateSchema(postCreateSchema), async (req, res, next) => {
+	router.post("/body", validateSchema(bodySchema), async (req, res, next) => {
 		res.status(200).send();
 	});
 	return router;
